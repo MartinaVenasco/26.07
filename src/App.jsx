@@ -16,8 +16,9 @@ function App() {
       </div>
       <div className="App_messages">
         <AddMessage isRenderedList={ isRenderedList } onAddButton={ setRenderedList }/>
+        <div className='search__input'><input ></input> <label>Search</label> </div>
         <MessageCardList isRenderedList={ isRenderedList } setRenderedList={setRenderedList}/>
-        
+
       </div>
      
     </div>

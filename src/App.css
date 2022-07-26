@@ -13,6 +13,9 @@
   padding: 20px;
   width: 400px;
 }
+.search__input {margin-bottom: 30px; display: flex;
+justify-content: center;
+gap:10px;}
 
 @media (max-width: 767px) {
   .App {
