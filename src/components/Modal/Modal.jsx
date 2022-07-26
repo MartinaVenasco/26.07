@@ -2,7 +2,8 @@ import "./index.css";
 import Button from "../Button";
 
 const Modal = ({
-modalVisibility, deleteBtn}) => {
+  setIsModalVisible  
+  , deleteBtn}) => {
  
   return (
    
@@ -18,7 +19,7 @@ modalVisibility, deleteBtn}) => {
                         deleteBtn();
                     }} color='lightseagreen' textContent='Si'/>
 
-					<Button onClick = {() => modalVisibility(false)} color='lightseagreen' textContent='Si' />
+					<Button onClick={() => setIsModalVisible(false)} color='red' textContent='No' />
           </div>
         </div>
       </div>

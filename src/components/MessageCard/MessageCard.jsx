@@ -3,7 +3,7 @@ import './index.css';
 
 import { useState } from 'react';
 
-const MessageCard = ({textContent, isRenderedList, deleteBtn}) => {
+const MessageCard = ({textContent,  deleteBtn}) => {
  const [isModalVisible, setIsModalVisible] = useState(false);
   
  
@@ -24,7 +24,7 @@ const MessageCard = ({textContent, isRenderedList, deleteBtn}) => {
       </div>
       {
         isModalVisible && <Modal  deleteBtn={deleteBtn}
-          setIsModalVisibile={setIsModalVisible} />
+          setIsModalVisible={setIsModalVisible} />
       }   
     </div>
   )

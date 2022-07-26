@@ -16,7 +16,8 @@ function App() {
       </div>
       <div className="App_messages">
         <AddMessage isRenderedList={ isRenderedList } onAddButton={ setRenderedList }/>
-        <MessageCardList isRenderedList={ isRenderedList } setRenderedList={setRenderedList} />
+        <MessageCardList isRenderedList={ isRenderedList } setRenderedList={setRenderedList}/>
+        
       </div>
      
     </div>

@@ -3,7 +3,7 @@ import MessageCard from "../MessageCard";
 import { GET , DELETE} from "../../utils/api";
 import "./index.css";
 
-const MessageCardList = ({ BASE_URL, isPosted, setIsPosted,
+const MessageCardList = ({
   isRenderedList,
   setRenderedList,
 }) => {
@@ -24,6 +24,7 @@ const MessageCardList = ({ BASE_URL, isPosted, setIsPosted,
                 DELETE('messages', message.id).then(() => setRenderedList(!isRenderedList))
               }
             key={message.id}
+          
           />
         ))
       ) : (
